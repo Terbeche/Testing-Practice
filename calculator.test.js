@@ -1,13 +1,12 @@
-const Calculator = require('./calculator');
+const Calculator = require('./calculator.js');
 
-const calculator = new Calculator;
+const calculator = new Calculator();
 
 describe('my calculator', () => {
   test('adding', () => {
     expect(calculator.add(5, 6)).toBe(11);
     expect(calculator.add(0, -5)).toBe(-5);
     expect(calculator.add(-5, -6)).toBe(-11);
-
   });
 
   test('substracting', () => {
